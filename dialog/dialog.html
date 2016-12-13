@@ -1,0 +1,56 @@
+<!Doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>tips</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    
+    <link rel="stylesheet" type="text/css" href="dialog.css"/>
+    <link rel="stylesheet" type="text/css" href="dialog.default.css"/>
+    <link rel="stylesheet" type="text/css" href="dialog.iOS7.css"/>
+   
+<body>
+
+<div id="dialog1" style="display:none">
+  <p><input type="text" value='fsaf' /></p>
+</div>
+<span class="btn">
+    弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />
+    弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />
+    弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />
+    弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />
+    弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />弹层1<br />
+</span>
+
+
+
+
+    <script type="text/javascript" src="./zepto.js"></script>
+    <script type="text/javascript" src="./widget.js"></script>
+    
+    <script type="text/javascript" src="./dialog.js"></script>
+    
+    <script type="text/javascript">
+                
+       $('.btn').on('click',function(){
+                 $('#dialog1').dialog({
+                 //content : 'fsa',
+                 title: '提示框1',
+                 timeclose:false,
+                 buttons: {
+                    
+                    '提交': function(){
+                        $('#dialog1').dialog({
+                           title: '提示框1',
+                           content:'提交成功111'  
+                        });
+                    }
+                 }
+             }); 
+            
+        })
+       
+    </script>
+</body>
+</html>
